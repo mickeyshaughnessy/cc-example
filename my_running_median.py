@@ -43,6 +43,5 @@ if __name__ == '__main__':
     sorted_files = sorted([s.replace('wc_input/', '') for s in sys.argv[2:]])
     counts = make_median_counter()
     for infile in sorted_files:
-        print infile
         compute_running_median(counts, 'wc_input/'+infile)
 
