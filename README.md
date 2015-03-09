@@ -1,7 +1,7 @@
 Word Count with Python + mrjob & Running Median Line Length 
 ===========================================================
 
-This directory a pair of programs to analyze text files.
+This directory contains a pair of programs to analyze text files.
 
 The first program uses the MapReduce paradigm, as implemented in
 the mrjob Python library, to count the occurences of all words in a 
@@ -23,7 +23,7 @@ a pair of minHeap and maxHeap structures or a counting sort could be used.
 In this solution I build a histogram of lengths and extract its maximum using
 the standard python max function, which is O(k), where k is the number of
 elements in the list. In this case `k = MAX_LINE_LEN`. This solution is chosen
-because it allows for a very simple program whose runtime can be linear in the 
+because it allows for a very simple program whose runtime is linear in the 
 size of the input files.
 
 Running the scripts
