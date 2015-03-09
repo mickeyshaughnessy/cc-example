@@ -10,7 +10,7 @@ with no communication between nodes during processing. The mrjob library is
 chosen because it is fairly commonly used for Python MapReduce jobs and
 because it can run the actual job locally, on a Hadoop cluster, or an Amazon Elastic 
 MapReduce. The current program is set to run on a single processor - see
-![python mrjob user guide](https://pythonhosted.org/mrjob/guides/quickstart.html#running-your-job-different-ways)
+[python mrjob user guide](https://pythonhosted.org/mrjob/guides/quickstart.html#running-your-job-different-ways)
 for additional options for larger jobs. 
 
 The second program computes a running median line length for the same 
@@ -30,11 +30,15 @@ Running the scripts
 -----------------------
 The only dependency is the mrjob library, which is installed automatically
 when the user runs the `run.sh` script. Alternately, the command
+
     pip install mrjob
+
 can be used to install mrjob. 
 
 Typing
+
     bash run.sh
+
 into the command line will run the jobs and produce output. The root password may
 be requested in order to ensure the mrjob library is installed. This section of the `run.sh`
 script can be ommitted (and the script run without sudo privileges) if mrjob is already installed. 
